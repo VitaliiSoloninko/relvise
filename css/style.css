@@ -142,6 +142,11 @@ button {
 }
 .page__main-block {
 }
+.page__services {
+	position: relative;
+	z-index: 3;
+	margin-top: -111px;
+}
 
 /* ===== MAIN =========================================================================================================*/
 /* ===== MAIN =========================================================================================================*/
@@ -252,7 +257,59 @@ button {
 	}
 }
 
+/* ===== SERVICES =========================================================================================================*/
+/* ===== SERVICES =========================================================================================================*/
+
+.services {
+}
+.services__container {
+}
+.services__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+}
+.services__column {
+	padding: 0px 15px;
+	flex: 0 1 33.33%;
+}
+.services__item {
+	height: 100%;
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+	border-color: #ffffff;
+	padding: 35px;
+}
+
+.item-service {
+	background-color: #ffffff;
+}
+.item-service_green {
+	background-color: #0d5c63;
+}
+.item-service > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+.item-service__icon {
+}
+.item-service_green .item-service__title {
+	color: #ffffff;
+}
+.item-service__title {
+	font-weight: 700;
+	letter-spacing: 0.1;
+	font-size: 24px;
+	line-height: 1.33;
+}
+.item-service_green .item-service__text {
+	color: #ffffff;
+}
+.item-service__text {
+	font-weight: 500;
+	line-height: 1.43;
+	color: #737373;
+}
 /* ===== FOOTER =========================================================================================================*/
 /* ===== FOOTER =========================================================================================================*/
+
 .footer {
 }
