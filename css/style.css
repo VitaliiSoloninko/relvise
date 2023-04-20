@@ -34,6 +34,7 @@ body {
 	color: #252b42;
 	font-weight: 500;
 	font-family: Montserrat;
+	background-color: #fafafa;
 }
 button {
 	background-color: inherit;
@@ -64,12 +65,7 @@ button {
 	left: 0;
 	object-fit: cover;
 }
-.header-block {
-}
-.header-block__title {
-}
-.header-block__sub-title {
-}
+
 /* ===== HEADER =========================================================================================================*/
 /* ===== HEADER =========================================================================================================*/
 
@@ -156,6 +152,25 @@ button {
 .page__advantages {
 }
 
+/* ===== HEADER-BLOCK =========================================================================================================*/
+/* ===== HEADER-BLOCK =========================================================================================================*/
+
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2;
+}
+.header-block__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.42;
+}
+.header-block__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.header-block__sub-title {
+	color: #737373;
+	line-height: 1.42;
+}
 /* ===== MAIN =========================================================================================================*/
 /* ===== MAIN =========================================================================================================*/
 
@@ -347,22 +362,48 @@ button {
 /* ===== ADVANTAGES =========================================================================================================*/
 
 .advantages {
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .advantages__container {
 }
 .advantages__header {
 }
+.advantages__header:not(:last-child) {
+	margin-bottom: 50px;
+}
 .advantages__body {
+	display: flex;
+	margin: 0px -15px;
+	justify-content: space-between;
 }
 .advantages__column {
+	padding: 0px 15px;
+	flex: 0 1 25%;
 }
 .advantages__item {
+	background-color: #ffffff;
+	padding: 30px;
+	text-align: center;
+	font-weight: 700;
+	height: 100%;
+}
+.advantages__item > *:not(:last-child) {
+	margin-bottom: 10px;
 }
 .advantages__icon {
+	height: 48px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }
 .advantages__value {
+	font-size: 40px;
+	line-height: 1.42;
 }
 .advantages__text {
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
 }
 
 /* ===== FOOTER =========================================================================================================*/
