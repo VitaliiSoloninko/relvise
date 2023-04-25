@@ -66,6 +66,36 @@ button {
 	object-fit: cover;
 }
 
+/* ===== HEADER-BLOCK =========================================================================================================*/
+/* ===== HEADER-BLOCK =========================================================================================================*/
+
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2;
+}
+.header-block__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.42;
+}
+@media (max-width: 991.98px) {
+	.header-block__title {
+		font-size: 36px;
+	}
+}
+@media (max-width: 767.98px) {
+	.header-block__title {
+		font-size: 30px;
+	}
+}
+.header-block__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.header-block__sub-title {
+	color: #737373;
+	line-height: 1.42;
+}
+
 /* ===== HEADER =========================================================================================================*/
 /* ===== HEADER =========================================================================================================*/
 
@@ -152,25 +182,6 @@ button {
 .page__advantages {
 }
 
-/* ===== HEADER-BLOCK =========================================================================================================*/
-/* ===== HEADER-BLOCK =========================================================================================================*/
-
-.header-block {
-	text-align: center;
-	letter-spacing: 0.2;
-}
-.header-block__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 1.42;
-}
-.header-block__title:not(:last-child) {
-	margin-bottom: 10px;
-}
-.header-block__sub-title {
-	color: #737373;
-	line-height: 1.42;
-}
 /* ===== MAIN =========================================================================================================*/
 /* ===== MAIN =========================================================================================================*/
 
@@ -365,22 +376,51 @@ button {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
+@media (max-width: 991.98px) {
+	.advantages {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.advantages {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
 .advantages__container {
 }
-.advantages__header {
-}
+
 .advantages__header:not(:last-child) {
 	margin-bottom: 50px;
 }
+@media (max-width: 767.98px) {
+	.advantages__header:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
 .advantages__body {
 	display: flex;
-	margin: 0px -15px;
+	flex-wrap: wrap;
+	margin: 0px -15px -30px;
 	justify-content: space-between;
 }
 .advantages__column {
 	padding: 0px 15px;
+	margin: 0px 0px 30px 0px;
 	flex: 0 1 25%;
 }
+@media (max-width: 1020px) {
+	.advantages__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 560px) {
+	.advantages__column {
+		flex: 0 1 100%;
+	}
+}
+
 .advantages__item {
 	background-color: #ffffff;
 	padding: 30px;
@@ -404,6 +444,44 @@ button {
 .advantages__text {
 	font-size: 16px;
 	line-height: 1.5; /* 24/16 */
+}
+
+/* ===== PRACTICE =========================================================================================================*/
+/* ===== PRACTICE =========================================================================================================*/
+
+.page__practice {
+}
+.practice {
+}
+.practice__container {
+}
+.container {
+}
+.practice__header {
+}
+.header-block {
+}
+.header-block__title {
+}
+.header-block__sub-title {
+}
+.practice__body {
+}
+.practice__column {
+}
+.practice__item {
+}
+.item-practice {
+}
+.item-practice__link {
+}
+.item-practice__title {
+}
+.item-practice__text {
+}
+.item-practice__image {
+}
+.ibg {
 }
 
 /* ===== FOOTER =========================================================================================================*/
