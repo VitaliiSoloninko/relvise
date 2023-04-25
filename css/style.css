@@ -181,6 +181,8 @@ button {
 }
 .page__advantages {
 }
+.page__practice {
+}
 
 /* ===== MAIN =========================================================================================================*/
 /* ===== MAIN =========================================================================================================*/
@@ -449,39 +451,75 @@ button {
 /* ===== PRACTICE =========================================================================================================*/
 /* ===== PRACTICE =========================================================================================================*/
 
-.page__practice {
-}
 .practice {
+	padding-top: 125px;
+	padding-bottom: 80px;
+}
+@media (max-width: 991.98px) {
+	.practice {
+		padding-top: 110px;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.practice {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
 }
 .practice__container {
 }
-.container {
-}
 .practice__header {
+	margin-bottom: 45px;
 }
-.header-block {
-}
-.header-block__title {
-}
-.header-block__sub-title {
+@media (max-width: 767.98px) {
+	.practice__header {
+		padding-bottom: 30px;
+	}
 }
 .practice__body {
+	display: flex;
+	margin: 0px -20px;
+	flex-wrap: wrap;
 }
 .practice__column {
+	padding: 0px 20px;
+	flex: 0 1 25%;
 }
 .practice__item {
+	background-color: #ffffff;
+}
+.item-practice__content {
+	padding: 30px;
 }
 .item-practice {
 }
 .item-practice__link {
+	color: inherit;
+	display: inline-block;
+}
+.item-practice__link:not(:last-child) {
+	margin-bottom: 15px;
+}
+.item-practice__link:hover {
+	text-decoration: underline;
 }
 .item-practice__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
 }
+
 .item-practice__text {
+	font-weight: 500;
+	line-height: 1.43;
+	letter-spacing: 0.2px;
+	color: #737373;
 }
 .item-practice__image {
-}
-.ibg {
+	display: block;
+	padding: 0px 0px 60% 0px;
 }
 
 /* ===== FOOTER =========================================================================================================*/
