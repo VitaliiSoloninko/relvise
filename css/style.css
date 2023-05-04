@@ -729,21 +729,44 @@ button {
 .subscribe__body {
 	position: relative;
 	z-index: 2;
-	margin: 0px 30px;
-	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	padding: 30px 50px;
 	background: #17213c;
 	border-radius: 2px;
 }
+@media (min-width: 1070px) {
+	.subscribe__body {
+		margin: 0px 30px;
+	}
+}
+
 .subscribe__title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.33;
 	letter-spacing: 0.1px;
 	color: #ffffff;
-	max-width: 266px;
+}
+@media (max-width: 810px) {
+	.subscribe__title {
+		margin-bottom: 20px;
+	}
+	.subscribe__body {
+		margin: 0px -15px;
+		padding: 20px 15px;
+	}
+	.subscribe__title {
+		font-size: 20px;
+	}
+}
+@media (min-width: 810px) {
+	.subscribe__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	.subscribe__title {
+		max-width: 266px;
+	}
 }
 .subscribe__form {
 	flex: 0 1 50%;
@@ -751,6 +774,7 @@ button {
 	align-items: center;
 }
 .subscribe__input {
+	width: 100%;
 	flex: 1 1 auto;
 	background: #f9f9f9;
 	border: 1px solid #e6e6e6;
