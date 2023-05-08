@@ -191,6 +191,9 @@ button {
 .page__subscribe {
 }
 
+.page__getintouch {
+}
+
 /* ===== MAIN =========================================================================================================*/
 /* ===== MAIN =========================================================================================================*/
 
@@ -801,6 +804,92 @@ button {
 	text-align: center;
 	letter-spacing: 0.2px;
 	min-height: 58px;
+}
+
+/* ===== Get In Touch =========================================================================================================*/
+/* ===== Get In Touch =========================================================================================================*/
+
+.getintouch {
+	padding-top: 80px;
+	padding-bottom: 148px;
+	background: #f3f3f3;
+}
+@media (max-width: 991.98px) {
+	.getintouch {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.getintouch {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+.getintouch__container {
+}
+.getintouch__header {
+	margin-bottom: 80px;
+}
+.getintouch__items {
+	display: flex;
+	align-items: center;
+}
+.getintouch__item {
+	flex: 0 1 33.3%;
+	padding: 50px 15px;
+}
+.item-getintouch {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff;
+}
+.item-getintouch__icon {
+	padding-bottom: 15px;
+}
+.item-getintouch__emails {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+}
+.item-getintouch__email {
+	color: inherit;
+	font-weight: 600;
+	line-height: 1.71;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+.item-getintouch__email:hover {
+	text-decoration: underline;
+}
+.item-getintouch__email:not(:last-child) {
+	margin-bottom: 10px;
+}
+.item-getintouch__label {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.1px;
+	padding-bottom: 15px;
+}
+.item-getintouch__button {
+	font-weight: 600;
+	line-height: 1.71;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #ff7b47;
+	padding: 10px 20px;
+	border: 1px solid #ff7b47;
+	border-radius: 5px;
+}
+.item-getintouch__button:hover {
+	background: #ffebe3;
 }
 
 /* ===== FOOTER =========================================================================================================*/
