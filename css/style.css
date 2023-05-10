@@ -190,8 +190,9 @@ button {
 }
 .page__subscribe {
 }
-
 .page__getintouch {
+}
+.page__contact {
 }
 
 /* ===== MAIN =========================================================================================================*/
@@ -922,6 +923,68 @@ button {
 	background: #ff7b47;
 	border: none;
 }
+
+/* ===== Contact =========================================================================================================*/
+/* ===== Contact =========================================================================================================*/
+
+.contact {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #ffffff;
+}
+@media (max-width: 767.98px) {
+	.contact {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.contact__container {
+}
+.contact__content {
+	padding: 0px 0px 20px 0px;
+}
+@media (min-width: 767.98px) {
+	.contact__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.contact__content {
+		padding: 0px 20px 0px 0px;
+	}
+}
+
+.contact__title {
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.1px;
+	line-height: 1.33;
+}
+.contact__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.contact__text {
+	font-weight: 500;
+	line-height: 1.43;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+.contact__button {
+	min-height: 58px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 40px;
+	background: #ff7b47;
+	border-radius: 5px;
+	color: #ffffff;
+	line-height: 28px;
+	transition: all 0.3s ease 0s;
+}
+.contact__button:hover {
+	background: #ff5c1b;
+}
+
 /* ===== FOOTER =========================================================================================================*/
 /* ===== FOOTER =========================================================================================================*/
 
