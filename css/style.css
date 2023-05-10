@@ -814,16 +814,23 @@ button {
 	padding-bottom: 148px;
 	background: #f3f3f3;
 }
+
 @media (max-width: 991.98px) {
 	.getintouch {
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+	.getintouch__header {
+		margin-bottom: 50px;
+	}
 }
 @media (max-width: 767.98px) {
 	.getintouch {
 		padding-top: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
+	}
+	.getintouch__header {
+		margin-bottom: 25px;
 	}
 }
 
@@ -833,13 +840,18 @@ button {
 	margin-bottom: 80px;
 }
 .getintouch__items {
-	display: flex;
-	align-items: center;
+}
+@media (min-width: 991.98px) {
+	.getintouch__items {
+		display: flex;
+		align-items: center;
+	}
 }
 .getintouch__item {
 	flex: 0 1 33.3%;
 	padding: 50px 15px;
 }
+
 .item-getintouch {
 	display: flex;
 	flex-direction: column;
@@ -847,6 +859,12 @@ button {
 	align-items: center;
 	background: #ffffff;
 }
+.item-getintouch_active {
+	background-color: #252b42;
+	padding: 80px 15px;
+	color: #ffffff;
+}
+
 .item-getintouch__icon {
 	padding-bottom: 15px;
 }
@@ -879,19 +897,31 @@ button {
 	padding-bottom: 15px;
 }
 .item-getintouch__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-weight: 600;
+	min-height: 44px;
 	line-height: 1.71;
-	text-align: center;
 	letter-spacing: 0.2px;
 	color: #ff7b47;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	border: 1px solid #ff7b47;
 	border-radius: 5px;
+	transition: all 0.3s ease 0s;
 }
 .item-getintouch__button:hover {
-	background: #ffebe3;
+	background: #ff7b47;
+	color: #ffffff;
 }
-
+.item-getintouch__button_active {
+	border: 1px solid #fafafa;
+	color: #ffffff;
+}
+.item-getintouch__button_active:hover {
+	background: #ff7b47;
+	border: none;
+}
 /* ===== FOOTER =========================================================================================================*/
 /* ===== FOOTER =========================================================================================================*/
 
